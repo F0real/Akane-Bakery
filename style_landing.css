@@ -1,0 +1,294 @@
+body {
+    margin: 0; font-family: Arial, sans-serif;
+}
+
+.div_utama {
+    display: flex; min-height: 100vh;
+}
+
+.kiri {
+    width: 200px; 
+    background-color: #015551; 
+    color: #FDFBEE; 
+    padding: 20px;
+}
+
+.navkiri {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.tabs{
+    list-style-type: none; 
+    padding: 0;
+}
+
+.judul {
+    color: #FE4F2D;
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.subjudul {
+    font-style: bold;
+    font-size: 14px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    color: #FDFBEE;
+}
+
+a {
+    color: #FDFBEE; 
+    text-decoration: none; 
+    display: block; 
+    padding: 10px 30px;
+    border: none;
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer; 
+}
+
+a {
+    position: relative;
+    background: transparent;
+    color: #FDFBEE;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    overflow: hidden; /* Essential for containment */
+    z-index: 1;
+}
+
+a::before {
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #57B4BA;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+a:hover {
+    color: white;
+}
+
+a:hover::before{
+    width: 100%;
+}
+
+main {
+    flex: 1; 
+    padding: 30px; 
+    background-color: #f5f5f5;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.header {
+    background-color: #d4a762; 
+    padding: 30px; 
+    border-radius: 5px; 
+    color: #FDFBEE;
+    text-align: center;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(Jiji.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.tombol_header{
+    background-color: #015551; 
+    color: #FDFBEE; 
+    border: none; 
+    padding: 10px 20px; 
+    margin-top: 15px; 
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.tombol_header{
+    position: relative;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.tombol_header::before {
+    content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #57B4BA;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: -1;
+}
+
+.tombol_header:hover{
+    color: #FDFBEE;
+    border-color: #57B4BA;
+}
+
+.tombol_header:hover::before{
+    width: 300%;
+    height: 300%;
+}
+
+h2 {
+    color: #3a2c2c; 
+    border-bottom: 2px solid #57B4BA; 
+    padding-bottom: 5px;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Menu {
+    background-image: url(Cheese_Toast.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    font-size: 27px;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FDFBEE;
+    margin-bottom: 100px;
+}
+
+.pbread {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: 0px -1px 0px #000;
+    background-color: #015551;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.hargaroti{
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.pastry {
+    background-image: url(Cruffins.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.ppastry {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: 0px -1px 0px #000;
+    background-color: #015551;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.harga_pastry {
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.cake {
+    background-image: url(Roll_Cake.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.pcake {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: 0px -1px 0px #000;
+    background-color: #015551;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.harga_cake {
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.milk_bread {
+    background-image: url(Milk_Bread.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.harga_shokupan {
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.mochi {
+    background-image: url(Mochi.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.harga_mochi {
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.Taiyaki {
+    background-image: url(Taiyaki.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.harga_taiyaki {
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.events {
+    background-image: url(totoro_3.jpeg);
+    background-size: cover;
+}
+
+.shock {
+    padding: 200px;
+}
